@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".CarDistuptionUpdates">
 
+    <!--Tutorial for User Interface layout from Youtube Kachhadiya Chirag https://www.youtube.com/watch?v=ejbX9MO2ems-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/titleLayout"
         android:layout_width="match_parent"
@@ -20,6 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
+            android:paddingLeft="40dp"
             android:text="@string/welcome_back"
             android:textColor="@color/textColor"
             android:textSize="30dp"
@@ -27,6 +29,7 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
+            android:id="@+id/welcomeName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -35,6 +38,16 @@
             android:textColor="@color/textColor"
             android:textSize="30dp"
             app:layout_constraintStart_toEndOf="@id/textWelcomeBack"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/returnButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/textWelcomeBack"
             app:layout_constraintTop_toTopOf="parent"/>
 
         <LinearLayout
@@ -75,84 +88,85 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <ScrollView
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:overScrollMode="never"
-            android:scrollbars="none"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/titleLayout">
+            android:layout_height="wrap_content">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:background="@color/textColor"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-                <LinearLayout
-                    android:id="@+id/disruptionLayout"
-                    android:layout_width="0dp"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="76dp"
-                    android:layout_marginTop="44dp"
                     android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="15dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                    android:text="@string/stoke_on_trent"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="@string/stoke_on_trent"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="30sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sample_text_1"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="@string/sample_text_1"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sample_text_2"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="@string/sample_text_2"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/birmingham"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="@string/birmingham"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="30sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sample_text_3"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="@string/sample_text_3"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sample_text_4"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="@string/sample_text_4"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="20sp" />
+                <ImageView
+                    android:layout_width="287dp"
+                    android:layout_height="347dp"
+                    android:src="@drawable/map" />
 
-                    <ImageView
-                        android:layout_width="287dp"
-                        android:layout_height="347dp"
-                        android:src="@drawable/map" />
 
-                </LinearLayout>
+
+            </LinearLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
