@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8A00BCD4</color>
+    <color name="colorPrimaryDark">#0A5279</color>
+    <color name="colorAccent">#C2BDC2</color>
+    <color name = "textColor">#FFFFFF</color>
+    <color name = "textBackgroundColor">#F5F5F5</color>
+    <color name = "inoutBoxBackground">#F1EDED</color>
+</resources>
