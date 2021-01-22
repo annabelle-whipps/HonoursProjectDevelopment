@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!--Tutorial for User Interface layout from Youtube -->
+    <!--Tutorial for User Interface layout from Youtube Kachhadiya Chirag https://www.youtube.com/watch?v=ejbX9MO2ems-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/titleLayout"
         android:layout_width="match_parent"
@@ -113,6 +113,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
+                    android:id="@+id/carButton"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
@@ -145,6 +146,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
+                    android:id="@+id/trainButton"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
@@ -177,6 +179,7 @@
                 app:layout_constraintTop_toBottomOf="@id/carLayout">
 
                 <ImageView
+                    android:id="@+id/busButton"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
@@ -209,6 +212,7 @@
                 app:layout_constraintTop_toBottomOf="@id/trainLayout">
 
                 <ImageView
+                    android:id="@+id/settingsButton"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"

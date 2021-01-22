@@ -91,22 +91,66 @@
                     android:id="@+id/disruptionLayout"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="22dp"
-                    android:background="@color/textBackgroundColor"
+                    android:layout_marginStart="76dp"
+                    android:layout_marginTop="44dp"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="15dp"
-                    app:layout_constraintDimensionRatio="H,1:1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Stoke-on-Trent"
+                        android:text="@string/stoke_on_trent"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="20sp"/>
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/sample_text_1"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/sample_text_2"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/birmingham"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/sample_text_3"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/sample_text_4"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="287dp"
+                        android:layout_height="347dp"
+                        android:src="@drawable/map" />
 
                 </LinearLayout>
 

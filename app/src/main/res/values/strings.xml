@@ -10,4 +10,10 @@
     <string name="sign_in">Sign In</string>
     <string name="have_an_account">Have an account?</string>
     <string name="register">Register</string>
+    <string name="stoke_on_trent">Stoke-on-Trent</string>
+    <string name="sample_text_1">Warning car accident on M6 Eastbound</string>
+    <string name="sample_text_2">expect delays and congestion for an hour.</string>
+    <string name="birmingham">Birmingham</string>
+    <string name="sample_text_3">Road closed North on Coleshill expect</string>
+    <string name="sample_text_4">congestion in Marston Green for 2 days.</string>
 </resources>
